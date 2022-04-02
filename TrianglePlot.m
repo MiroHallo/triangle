@@ -74,7 +74,7 @@ SDR = [
 
 % Color RGB codes (odd, strike-slip, normal, reverse)
 coloF = [
-0.3 0.3 0.3
+0.2 0.2 0.2
 1 0 0
 0 1 0
 0 0 1
@@ -83,7 +83,10 @@ coloF = [
 % Plot grid (strike-slip, normal, reverse)
 pGrid = 1;
 
-% Plot additional legend of odd events
+% Plot secondary grid (90, 80, ... deg)
+pSecGrid = 1;
+
+% Plot additional legend of odd focal mechanisms
 pAddOdd = 1;
 
 % END INPUT
@@ -97,7 +100,7 @@ dN = 35.26;
 figure('color','w');
 hold on
 
-% Border
+% Plot Border
 dP = 90; dT = 0; dB = 0;
 z = atand(sind(dT)/sind(dP))-45;
 h1 = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
@@ -114,11 +117,63 @@ h3 = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
 v3 = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
 plot([h1 h2 h3 h1],[v1 v2 v3 v1],'-k')
 
-% Grid
+% Plot Secondary Grid
+if pSecGrid
+    Np = 100;
+    for dd = 10:10:80
+        h1_grid = zeros(1,Np);
+        v1_grid = zeros(1,Np);
+        for i=1:Np
+            dP = dd;
+            dT = (i-1)*((90-dd)/(Np-1));
+            dB = asind(sqrt(1 - (sind(dP)^2 + sind(dT)^2)));
+            z = atand(sind(dT)/sind(dP))-45;
+            h1_grid(i) = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
+            v1_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
+        end
+        plot(h1_grid,v1_grid,'-','Color',[0.6 0.6 0.6],'LineWidth',0.5)
+        text(h1_grid(end),v1_grid(end)-0.08,num2str(dd),'VerticalAlignment','top','HorizontalAlignment','center','Color',[0.6 0.6 0.6])
+        
+        h2_grid = zeros(1,Np);
+        v2_grid = zeros(1,Np);
+        for i=1:Np
+            dB = dd;
+            dT = (i-1)*((90-dd)/(Np-1));
+            dP = asind(sqrt(1 - (sind(dB)^2 + sind(dT)^2)));
+            z = atand(sind(dT)/sind(dP))-45;
+            h2_grid(i) = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
+            v2_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
+        
+        end
+        [h2_grid,ind] = sort(h2_grid);
+        plot(h2_grid,v2_grid(ind),'-','Color',[0.6 0.6 0.6],'LineWidth',0.5)
+        text(h2_grid(1)-0.1,v2_grid(1),num2str(dd),'VerticalAlignment','bottom','HorizontalAlignment','right','Color',[0.6 0.6 0.6])
+        
+        h3_grid = zeros(1,Np);
+        v3_grid = zeros(1,Np);
+        for i=1:Np
+            dT = dd;
+            dP = (i-1)*((90-dd)/(Np-1));
+            dB = asind(sqrt(1 - (sind(dP)^2 + sind(dT)^2)));
+            z = atand(sind(dT)/sind(dP))-45;
+            h3_grid(i) = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
+            v3_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
+        end
+        plot(h3_grid,v3_grid,'-','Color',[0.6 0.6 0.6],'LineWidth',0.5)
+        text(h3_grid(1)+0.1,v3_grid(1),num2str(dd),'VerticalAlignment','bottom','HorizontalAlignment','left','Color',[0.6 0.6 0.6])
+    end
+    
+    text(0,-1.08,'\delta_P (deg)','VerticalAlignment','bottom','HorizontalAlignment','center','Color',[0.6 0.6 0.6])
+    text(-0.9,0.5,'\delta_B (deg)','VerticalAlignment','bottom','HorizontalAlignment','center','Rotation',60,'Color',[0.6 0.6 0.6])
+    text(0.9,0.5,'\delta_T (deg)','VerticalAlignment','bottom','HorizontalAlignment','center','Rotation',-60,'Color',[0.6 0.6 0.6])
+    
+end
+
+% Plot Major Grid
 if pGrid
+    Np = 100;
     plot(0,0,'+','Color',[0.6 0.6 0.6])
     
-    Np = 100;
     h1_grid = zeros(1,Np);
     v1_grid = zeros(1,Np);
     for i=1:Np
@@ -129,20 +184,20 @@ if pGrid
         h1_grid(i) = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
         v1_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
     end
-    plot(h1_grid,v1_grid,'-','Color',[0.6 0.6 0.6])
+    plot(h1_grid,v1_grid,'-','Color',[0.6 0.6 0.6],'LineWidth',2)
     
     h2_grid = zeros(1,Np);
     v2_grid = zeros(1,Np);
     for i=1:Np
         dB = 60;
-        dT = (i-1)*(45/(Np-1.499));
-        dP = asind(sqrt(1 - (sind(dP)^2 + sind(dT)^2)));
+        dT = (i-1)*(30/(Np-1));
+        dP = asind(sqrt(1 - (sind(dB)^2 + sind(dT)^2)));
         z = atand(sind(dT)/sind(dP))-45;
         h2_grid(i) = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
         v2_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
     end
     [h2_grid,ind] = sort(h2_grid);
-    plot(h2_grid,v2_grid(ind),'-','Color',[0.6 0.6 0.6])
+    plot(h2_grid,v2_grid(ind),'-','Color',[0.6 0.6 0.6],'LineWidth',2)
     
     h3_grid = zeros(1,Np);
     v3_grid = zeros(1,Np);
@@ -154,10 +209,11 @@ if pGrid
         h3_grid(i) = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
         v3_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
     end
-    plot(h3_grid,v3_grid,'-','Color',[0.6 0.6 0.6])
+    plot(h3_grid,v3_grid,'-','Color',[0.6 0.6 0.6],'LineWidth',2)
+    
 end
 
-% Plot events
+% Plot Events
 for i=1:length(mClassAll)
     dP = dPAll(i);
     dT = dTAll(i);
@@ -169,12 +225,12 @@ for i=1:length(mClassAll)
     plot(h,v,'o','MarkerFaceColor',coloF(mClassAll(i)+1,:),'MarkerEdgeColor',coloF(mClassAll(i)+1,:),'MarkerSize',7)
 end
 
-% Plot focal mechanisms
+% Plot Focal Mechanisms
 bb([0,45,-90], h1, v1, 0.12, 0, coloF(3,:))
 bb([0,45,90], h2, v2, 0.12, 0, coloF(4,:))
 bb([45,90,180], h3, v3, 0.12, 0, coloF(2,:))
 
-% Plot additional focal mechanisms
+% Plot Additional Focal Mechanisms
 if pAddOdd
     SDRodd = [0,90,-90];
     [~,dP,dT,dB] = mechClass(SDRodd(1),SDRodd(2),SDRodd(3));
