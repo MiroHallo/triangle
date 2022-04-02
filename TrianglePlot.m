@@ -120,7 +120,7 @@ plot([h1 h2 h3 h1],[v1 v2 v3 v1],'-k')
 % Plot Secondary Grid
 if pSecGrid
     Np = 100;
-    for dd = 10:10:80
+    for dd = 20:10:80
         h1_grid = zeros(1,Np);
         v1_grid = zeros(1,Np);
         for i=1:Np
