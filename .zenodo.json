@@ -1,0 +1,18 @@
+{
+  "title": "Plot PT-axes and Triangle diagram of earthquake source",
+  "description": "Plot PT-axes into polar diagram, and triangle diagram (Frohlich, 1992) of double-couple focal mechanism of earthquake sources.",
+  "creators": [
+    {
+      "name": "Hallo, Miroslav",
+      "affiliation": "Charles University", 
+	  "orcid": "0000-0001-5865-7767"
+    }
+  ],
+  "access_right": "open",
+  "license": "GPL-3.0-or-later",
+  "keywords": ["Seismology", "Earthquake", "Earthquake Source", "Visualization"],
+  "resource_type": {
+    "type": "software",
+    "title": "Software"
+  }
+}
