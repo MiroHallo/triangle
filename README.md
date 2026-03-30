@@ -1,9 +1,9 @@
-# PT-axes and Triangle diagram
+# PT-axes and Triangle diagram of earthquake source
 Plot PT-axes into polar diagram and the triangle diagram
 ***************************************
 
   Open-source Matlab functions for plotting PT-axes into polar diagram,
-and triangle diagram (Frohlich 1992) of DC focal mechanisms.
+and triangle diagram (Frohlich 1992) of double-couple focal mechanisms.
 
 1 METHODOLOGY
 ===================
@@ -15,7 +15,7 @@ Earth and Planetary Interiors, 75, 193-198.
   Hallo, M., Opršal, I., Asano, K., Gallovič, F. (2019). Seismotectonics
 of the 2018 Northern Osaka M6.1 earthquake and its aftershocks: joint
 movements on strike-slip and reverse faults in inland Japan, Earth,
-Planets and Space, 71:34.
+Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://doi.org/10.1186/s40623-019-1016-8)
 
 2 PACKAGE CONTENT
 ===================
@@ -28,6 +28,8 @@ Planets and Space, 71:34.
 
 3 REQUIREMENTS
 ===================
+
+  MATLAB version R2016b
 
   MATLAB: Codes do not require any additional Matlab Toolboxes.
   
