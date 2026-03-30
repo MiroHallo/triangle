@@ -17,7 +17,12 @@ of the 2018 Northern Osaka M6.1 earthquake and its aftershocks: joint
 movements on strike-slip and reverse faults in inland Japan, Earth,
 Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://doi.org/10.1186/s40623-019-1016-8)
 
-2 PACKAGE CONTENT
+2 TECHNICAL IMPLEMENTATION
+===================
+
+Cross-Platform (Windows, Linux)
+
+3 PACKAGE CONTENT
 ===================
 
   a) "PTaxesPlot.m" - Matlab code that plot PT-axes of DC focal
@@ -26,14 +31,14 @@ Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://do
   b) "TrianglePlot.m" - Classification of source focal mechanisms
   (strike-slip, reverse, normal, odd) and plot the triangle diagram.
 
-3 REQUIREMENTS
+4 REQUIREMENTS
 ===================
 
   MATLAB version R2016b
 
   MATLAB: Codes do not require any additional Matlab Toolboxes.
   
-4 COPYRIGHT
+5 COPYRIGHT
 ===================
 
 Copyright (C) 2018,2019  Miroslav Hallo
