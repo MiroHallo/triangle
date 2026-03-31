@@ -22,6 +22,10 @@ Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://do
 
 Cross-Platform (Windows, Linux)
 
+The official software version is archived on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342842.svg)](https://doi.org/10.5281/zenodo.19342842)
+
 3 PACKAGE CONTENT
 ===================
 
