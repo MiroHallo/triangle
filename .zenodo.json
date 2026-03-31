@@ -12,7 +12,7 @@
   "access_right": "open",
   "license": "GPL-3.0-or-later",
   "keywords": ["Seismology", "Earthquake", "Earthquake Source", "Visualization"],
-    "related_identifiers": [
+  "related_identifiers": [
     {
       "scheme": "doi",
       "identifier": "10.1186/s40623-019-1016-8",
