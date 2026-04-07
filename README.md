@@ -34,7 +34,7 @@ The official software version is archived on Zenodo:
 ===================
 
   1. `plot_pt_axes.m` - Plot PT-axes distributions in polar diagram
-  2. `plot_triangle.m` - Plot Triangle diagram (Frohlich, 1992) for focal mechanism classification (strike-slip, reverse, normal, odd)
+  2. `plot_triangle.m` - Plot Triangle diagram for focal mechanism classification (strike-slip, reverse, normal, odd)
   3. `plot_sdr_hist.m` - Plot polar histograms of strike azimuths and dip angles
   4. `example_sdr.txt` - Example of input text file with Strike, Dip, and Rake angles
 
