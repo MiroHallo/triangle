@@ -63,7 +63,7 @@ pAddOdd = 1;
 
 % Color RGB codes
 coloF = [
-    0.30, 0.30, 0.30;  % Dark Grey (Odd)
+    0.20, 0.20, 0.20;  % Dark Grey (Odd)
     0.85, 0.20, 0.20;  % Muted Red (Strike-slip)
     0.20, 0.65, 0.30;  % Muted Green (Normal)
     0.20, 0.45, 0.75   % Muted Blue (Reverse)
@@ -134,7 +134,7 @@ if pSecGrid
             v1_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
         end
         plot(h1_grid,v1_grid,'-','Color',[0.9 0.9 0.9],'LineWidth',0.5)
-        text(h1_grid(end),v1_grid(end)-0.08,num2str(dd),'VerticalAlignment','top','HorizontalAlignment','center','Color',[0.6 0.6 0.6])
+        text(h1_grid(end),v1_grid(end)-0.08,num2str(dd),'VerticalAlignment','top','HorizontalAlignment','center','Color','k')
         
         h2_grid = zeros(1,Np);
         v2_grid = zeros(1,Np);
@@ -149,7 +149,7 @@ if pSecGrid
         end
         [h2_grid,ind] = sort(h2_grid);
         plot(h2_grid,v2_grid(ind),'-','Color',[0.9 0.9 0.9],'LineWidth',0.5)
-        text(h2_grid(1)-0.1,v2_grid(1),num2str(dd),'VerticalAlignment','bottom','HorizontalAlignment','right','Color',[0.6 0.6 0.6])
+        text(h2_grid(1)-0.1,v2_grid(1),num2str(dd),'VerticalAlignment','bottom','HorizontalAlignment','right','Color','k')
         
         h3_grid = zeros(1,Np);
         v3_grid = zeros(1,Np);
@@ -162,19 +162,19 @@ if pSecGrid
             v3_grid(i) = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
         end
         plot(h3_grid,v3_grid,'-','Color',[0.9 0.9 0.9],'LineWidth',0.5)
-        text(h3_grid(1)+0.1,v3_grid(1),num2str(dd),'VerticalAlignment','bottom','HorizontalAlignment','left','Color',[0.6 0.6 0.6])
+        text(h3_grid(1)+0.1,v3_grid(1),num2str(dd),'VerticalAlignment','bottom','HorizontalAlignment','left','Color','k')
     end
     
-    text(0,-1.08,'\delta_P (deg)','VerticalAlignment','bottom','HorizontalAlignment','center','Color',[0.6 0.6 0.6])
-    text(-0.9,0.5,'\delta_B (deg)','VerticalAlignment','bottom','HorizontalAlignment','center','Rotation',60,'Color',[0.6 0.6 0.6])
-    text(0.9,0.5,'\delta_T (deg)','VerticalAlignment','bottom','HorizontalAlignment','center','Rotation',-60,'Color',[0.6 0.6 0.6])
+    text(0,-1.08,'\delta_P (\circ)','VerticalAlignment','bottom','HorizontalAlignment','center','Color','k')
+    text(-0.9,0.5,'\delta_B (\circ)','VerticalAlignment','bottom','HorizontalAlignment','center','Rotation',60,'Color','k')
+    text(0.9,0.5,'\delta_T (\circ)','VerticalAlignment','bottom','HorizontalAlignment','center','Rotation',-60,'Color','k')
     
 end
 
 % Plot Major Grid
 if pGrid
     Np = 100;
-    plot(0,0,'+','Color',[0.6 0.6 0.6])
+    plot(0,0,'+','Color',[0.9 0.9 0.9])
     
     h1_grid = zeros(1,Np);
     v1_grid = zeros(1,Np);
@@ -239,21 +239,21 @@ if pAddOdd
     z = atand(sind(dT)/sind(dP))-45;
     hodd = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
     vodd = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
-    bb(SDRodd, hodd, vodd, 0.1, 0, coloF(1,:))
+    bb(SDRodd, hodd, vodd, 0.09, 0, coloF(1,:))
     
     SDRodd = [144,60,35];
     [~,dP,dT,dB] = mech_class(SDRodd(1),SDRodd(2),SDRodd(3));
     z = atand(sind(dT)/sind(dP))-45;
     hodd = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
     vodd = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
-    bb(SDRodd, hodd, vodd, 0.1, 0, coloF(1,:))
+    bb(SDRodd, hodd, vodd, 0.09, 0, coloF(1,:))
     
     SDRodd = [216,60,-35];
     [~,dP,dT,dB] = mech_class(SDRodd(1),SDRodd(2),SDRodd(3));
     z = atand(sind(dT)/sind(dP))-45;
     hodd = (cosd(dB)*sind(z)) / (sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
     vodd = (cosd(dN)*sind(dB)-sind(dN)*cosd(dB)*cosd(z))/(sind(dN)*sind(dB)+cosd(dN)*cosd(dB)*cosd(z));
-    bb(SDRodd, hodd, vodd, 0.1, 0, coloF(1,:))
+    bb(SDRodd, hodd, vodd, 0.09, 0, coloF(1,:))
 end
 
 hold off

@@ -60,7 +60,7 @@ anglestep = 15;
 dip_th = 5;
 
 % Set RGB color
-coloF = [0.30, 0.30, 0.30];
+coloF = [0.20, 0.20, 0.20];
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -144,6 +144,8 @@ ax.ThetaTick=[0 15 30 45 60 75 90 105 120 135 150 165 180 195 210 225 240 255 27
 ax.ThetaTickLabels = {'N' '' '30' '' '60' '' 'E' '' '120' '' '150' '' 'S' '' '210' '' '240' '' 'W' '' '300' '' '330' ''};
 ax.GridAlpha = 1;
 ax.GridColor = [0.9 0.9 0.9];
+ax.ThetaColor = 'k';
+ax.FontSize = 11;
 ax.ThetaDir = 'clockwise';
 ax.ThetaZeroLocation = 'top';
 ax.RTick = rTicks;
@@ -170,6 +172,8 @@ else
 end
 ay.GridAlpha = 1;
 ay.GridColor = [0.9 0.9 0.9];
+ay.ThetaColor = 'k';
+ay.FontSize = 11;
 ay.ThetaDir = 'clockwise';
 ay.ThetaZeroLocation = 'right';
 ay.RTick = rTicks;

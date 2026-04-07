@@ -83,8 +83,8 @@ figure('color','white');
 
 polarplot(frad, ones(1,length(fang)), 'k', 'LineWidth', 1.0, 'HandleVisibility', 'off');
 hold on;
-polarplot(P_polarThe, P_polarRho, 'ro', 'MarkerSize', 5, 'LineWidth', 1.0);
-polarplot(T_polarThe, T_polarRho,'b+', 'MarkerSize', 5, 'LineWidth', 1.0);
+polarplot(P_polarThe, P_polarRho, 'ro', 'MarkerSize', 6, 'LineWidth', 1.0);
+polarplot(T_polarThe, T_polarRho,'b+', 'MarkerSize', 6, 'LineWidth', 1.0);
 
 ax = gca;
 ax.ThetaTick = 0:22.5:360;
@@ -94,6 +94,8 @@ ax.ThetaTickLabels = {'N','','NE','','E','','SE','','S','','SW','','W','','NW','
 ax.RTickLabel = [];
 ax.GridColor = [0.9 0.9 0.9];
 ax.GridAlpha = 1;
+ax.ThetaColor = 'k';
+ax.FontSize = 11;
 hold off
 
 legend('P-axis','T-axis','Location','northeastoutside')
