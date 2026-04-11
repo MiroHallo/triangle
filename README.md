@@ -38,12 +38,22 @@ The official software version is archived on Zenodo:
   3. `plot_sdr_hist.m` - Plot polar histograms of strike azimuths and dip angles
   4. `example_sdr.txt` - Example of input text file with Strike, Dip, and Rake angles
 
-4 REQUIREMENTS
+4 RELEASE HISTORY (MAJOR VERSIONS)
 ===================
 
-  MATLAB: Version R2025b, Codes do not require any additional Matlab Toolboxes.
+*   **2.0 — Refactored Release** | April 2026
+    *   Modernization: Fully ported to MATLAB R2025b with industry-standard directory structure
+    *   UX/I-O: Robust ASCII parser, intuitive variable naming, and refined graphical reports
 
-5 USAGE
+*   **1.0 — Initial Release** | February 2019
+    *   Core implementation used by paper published in Earth, Planets and Space (Hallo et al., 2019)
+
+5 REQUIREMENTS
+===================
+
+  MATLAB: Version R2025b, Codes do not require any additional Matlab Toolboxes
+
+6 USAGE
 ===================
 
   1. Prepare your `example_sdr.txt` input file (Strike, Dip, and Rake angles)
@@ -51,7 +61,7 @@ The official software version is archived on Zenodo:
   3. Run any of the main scripts: `plot_pt_axes.m`, `plot_triangle.m`, or `plot_sdr_hist.m`
   4. Check the `/results` folder for high-resolution outputs
 
-6 EXAMPLE OUTPUT
+7 EXAMPLE OUTPUT
 ===================
 
 This tool suite features a robust ASCII text parser to read Strike, Dip, and Rake angles.
@@ -64,7 +74,7 @@ and saves the results in high-resolution formats.
   <img alt="Tools for seismic source analysis" src="img/pt_plots_light.png">
 </picture>
 
-7 COPYRIGHT
+8 COPYRIGHT
 ===================
 
 Copyright (C) 2018,2019 Miroslav Hallo
