@@ -75,7 +75,7 @@ and saves the results in high-resolution formats.
 
 ## 8 COPYRIGHT
 
-Copyright (C) 2018,2019 Miroslav Hallo
+Copyright (C) 2018,2019,2026 Miroslav Hallo
 
 This program is published under the GNU General Public License (GNU GPL).
 
