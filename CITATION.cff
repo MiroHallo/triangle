@@ -7,9 +7,9 @@ authors:
     orcid: "https://orcid.org/0000-0001-5865-7767"
 title: "Tools suite for seismic source analysis: Polar PT-axes and triangle diagrams"
 abstract: "Tools suite for double-couple seismic source analysis: Plot focal mechanism PT-axes into polar diagram, triangle diagram (Frohlich, 1992), and plot histograms of strike azimuths and dip angle."
-version: "2.1"
+version: "2.1.1"
 doi: "10.5281/zenodo.19342842"
-date-released: "2026-04-07"
+date-released: "2026-04-20"
 license: GPL-3.0-or-later
 repository-code: "https://github.com/MiroHallo/focal-mech-pt-plots"
 keywords:

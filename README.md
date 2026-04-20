@@ -88,15 +88,15 @@ This code is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY. We would like to kindly ask you to acknowledge the authors
 and don't remove their names from the code.
 
-You should have received copy of the GNU General Public License along
+You should have received a copy of the GNU General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ## 9 CITE AS
 
-If you use this tools suite in your research, please cite both the original methodology paper (preferred) and the software version as follows:
+If you use this tools suite, please cite both the original methodology paper (preferred) and the software version as follows:
 
 ### For the methodology and implementation:
 > Hallo, M., Oprsal, I., Asano, K., Gallovic, F. (2019). Seismotectonics of the 2018 Northern Osaka M6.1 earthquake and its aftershocks: joint movements on strike-slip and reverse faults in inland Japan. Earth, Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://doi.org/10.1186/s40623-019-1016-8)
 
 ### For the specific software version:
-> Hallo, M. (2026). Tools suite for seismic source analysis: Polar PT-axes and triangle diagrams (Version 2.1). *Zenodo*. [https://doi.org/10.5281/zenodo.19342842](https://doi.org/10.5281/zenodo.19342842)
+> Hallo, M. (2026). Tools suite for seismic source analysis: Polar PT-axes and triangle diagrams (v2.1.1). Zenodo. [https://doi.org/10.5281/zenodo.19342842](https://doi.org/10.5281/zenodo.19342842)

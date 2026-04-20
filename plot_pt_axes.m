@@ -83,8 +83,8 @@ figure('color','white');
 
 polarplot(frad, ones(1,length(fang)), 'k', 'LineWidth', 1.0, 'HandleVisibility', 'off');
 hold on;
-polarplot(P_polarThe, P_polarRho, 'ro', 'MarkerSize', 7, 'LineWidth', 1.1);
-polarplot(T_polarThe, T_polarRho,'b+', 'MarkerSize', 7, 'LineWidth', 1.1);
+polarplot(P_polarThe, P_polarRho, 'ro', 'MarkerSize', 7, 'LineWidth', 1.2);
+polarplot(T_polarThe, T_polarRho,'b+', 'MarkerSize', 7, 'LineWidth', 1.2);
 
 ax = gca;
 ax.ThetaTick = 0:22.5:360;
