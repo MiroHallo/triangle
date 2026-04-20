@@ -5,9 +5,10 @@ Tools suite for double-couple seismic source analysis: Plot focal mechanism PT-a
 ---
 
 This suite provides tools for the analysis and visualization of double-couple seismic 
-sources. It processes Strike, Dip, and Rake angles to generate: 1) PT-axes 
-distributions in polar diagrams, 2) Triangle diagrams (Frohlich, 1992) for focal 
-mechanism classification, 3) Polar histograms of strike azimuths and dip angles. 
+sources. It processes Strike, Dip, and Rake angles to generate: 
+1. **PT-axes** distributions in polar diagrams
+2. **Triangle diagrams** (Frohlich, 1992) for focal mechanism classification
+3. **Polar histograms** of strike azimuths and dip angles
 These visualizations are essential for interpreting local seismotectonic settings 
 and characterizing fault populations in seismic hazard assessment.
 
