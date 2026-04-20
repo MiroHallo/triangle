@@ -9,6 +9,7 @@ sources. It processes Strike, Dip, and Rake angles to generate:
 1. **PT-axes** distributions in polar diagrams
 2. **Triangle diagrams** (Frohlich, 1992) for focal mechanism classification
 3. **Polar histograms** of strike azimuths and dip angles
+
 These visualizations are essential for interpreting local seismotectonic settings 
 and characterizing fault populations in seismic hazard assessment.
 
@@ -20,30 +21,27 @@ The suite uses theory by Frohlich (1992) in the implementation by Hallo et al. (
 similarity and diversity of earthquake focal mechanisms, Physics of the
 Earth and Planetary Interiors, 75, 193-198. [https://doi.org/10.1016/0031-9201(92)90130-N](https://doi.org/10.1016/0031-9201(92)90130-N)
 
-  Hallo, M., Opršal, I., Asano, K., Gallovič, F. (2019). Seismotectonics
+  Hallo, M., Oprsal, I., Asano, K., Gallovic, F. (2019). Seismotectonics
 of the 2018 Northern Osaka M6.1 earthquake and its aftershocks: joint
 movements on strike-slip and reverse faults in inland Japan, Earth,
 Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://doi.org/10.1186/s40623-019-1016-8)
 
-2 TECHNICAL IMPLEMENTATION
-===================
+## 2 TECHNICAL IMPLEMENTATION
 
-Cross-Platform (Windows, Linux), Portable Paths, Robust ASCII input parser, High-resolution image exports
+Cross-Platform (Windows, Linux, macOS), Portable Paths, Robust ASCII input parser, High-resolution image exports
 
 The official software version is archived on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342842.svg)](https://doi.org/10.5281/zenodo.19342842)
 
-3 PACKAGE CONTENT
-===================
+## 3 PACKAGE CONTENT
 
-  1. `plot_pt_axes.m` - Plot PT-axes distributions in polar diagram
-  2. `plot_triangle.m` - Plot Triangle diagram for focal mechanism classification (strike-slip, reverse, normal, odd)
-  3. `plot_sdr_hist.m` - Plot polar histograms of strike azimuths and dip angles
-  4. `example_sdr.txt` - Example of input text file with Strike, Dip, and Rake angles
+1. `plot_pt_axes.m` - Plot PT-axes distributions in polar diagram
+2. `plot_triangle.m` - Plot Triangle diagram for focal mechanism classification (strike-slip, reverse, normal, odd)
+3. `plot_sdr_hist.m` - Plot polar histograms of strike azimuths and dip angles
+4. `example_sdr.txt` - Example of input text file with Strike, Dip, and Rake angles
 
-4 RELEASE HISTORY (MAJOR VERSIONS)
-===================
+## 4 RELEASE HISTORY (MAJOR VERSIONS)
 
 *   **2.0 — Refactored Release** | April 2026
     *   Modernization: Fully ported to MATLAB R2025b with industry-standard directory structure
@@ -52,21 +50,18 @@ The official software version is archived on Zenodo:
 *   **1.0 — Initial Release** | February 2019
     *   Core implementation used by paper published in Earth, Planets and Space (Hallo et al., 2019)
 
-5 REQUIREMENTS
-===================
+## 5 REQUIREMENTS
 
-  MATLAB: Version R2025b, Codes do not require any additional Matlab Toolboxes
+  MATLAB: Version R2025b or newer, Codes do not require any additional Matlab Toolboxes
 
-6 USAGE
-===================
+## 6 USAGE
 
-  1. Prepare your `example_sdr.txt` input file (Strike, Dip, and Rake angles)
-  2. Open MATLAB
-  3. Run any of the main scripts: `plot_pt_axes.m`, `plot_triangle.m`, or `plot_sdr_hist.m`
-  4. Check the `/results` folder for high-resolution outputs
+1. Prepare your `example_sdr.txt` input file (Strike, Dip, and Rake angles)
+2. Open MATLAB
+3. Run any of the main scripts: `plot_pt_axes.m`, `plot_triangle.m`, or `plot_sdr_hist.m`
+4. Check the `/results` folder for high-resolution outputs
 
-7 EXAMPLE OUTPUT
-===================
+## 7 EXAMPLE OUTPUT
 
 This tool suite features a robust ASCII text parser to read Strike, Dip, and Rake angles.
 It automatically processes the data, generates professional visualizations,
@@ -78,8 +73,7 @@ and saves the results in high-resolution formats.
   <img alt="Tools for seismic source analysis" src="img/pt_plots_light.png">
 </picture>
 
-8 COPYRIGHT
-===================
+## 8 COPYRIGHT
 
 Copyright (C) 2018,2019 Miroslav Hallo
 
@@ -96,3 +90,13 @@ and don't remove their names from the code.
 
 You should have received copy of the GNU General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
+
+## 9 CITE AS
+
+If you use this tools suite in your research, please cite both the original methodology paper (preferred) and the software version as follows:
+
+### For the methodology and implementation:
+> Hallo, M., Oprsal, I., Asano, K., Gallovic, F. (2019). Seismotectonics of the 2018 Northern Osaka M6.1 earthquake and its aftershocks: joint movements on strike-slip and reverse faults in inland Japan. Earth, Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://doi.org/10.1186/s40623-019-1016-8)
+
+### For the specific software version:
+> Hallo, M. (2026). Tools suite for seismic source analysis: Polar PT-axes and triangle diagrams (Version 2.1). *Zenodo*. [https://doi.org/10.5281/zenodo.19342842](https://doi.org/10.5281/zenodo.19342842)
