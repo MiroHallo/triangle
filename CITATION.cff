@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Hallo"
+    given-names: "Miroslav"
+    orcid: "https://orcid.org/0000-0001-5865-7767"
+title: "Tools suite for seismic source analysis: Polar PT-axes and triangle diagrams"
+abstract: "Tools suite for double-couple seismic source analysis: Plot focal mechanism PT-axes into polar diagram, triangle diagram (Frohlich, 1992), and plot histograms of strike azimuths and dip angle."
+version: "2.1"
+doi: "10.5281/zenodo.19342842"
+date-released: "2026-04-07"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/MiroHallo/focal-mech-pt-plots"
+keywords:
+  - "seismology"
+  - "earthquake source"
+  - "focal mechanism"
+  - "triangle diagram"
+  - "PT-axes"
+
+# -------------------------------------------------------------------
+# Preferred citation for GitHub
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Hallo"
+      given-names: "Miroslav"
+      orcid: "https://orcid.org/0000-0001-5865-7767"
+    - family-names: "Oprsal"
+      given-names: "Ivo"
+    - family-names: "Asano"
+      given-names: "Kimiyuki"
+      orcid: "https://orcid.org/0000-0002-8530-4198"
+    - family-names: "Gallovic"
+      given-names: "Frantisek"
+      orcid: "https://orcid.org/0000-0002-9268-3923"
+  title: "Seismotectonics of the 2018 Northern Osaka M6.1 earthquake and its aftershocks: joint movements on strike-slip and reverse faults in inland Japan"
+  journal: "Earth, Planets and Space"
+  year: 2019
+  volume: "71"
+  number: "34"
+  doi: "10.1186/s40623-019-1016-8"
