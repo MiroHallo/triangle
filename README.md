@@ -35,12 +35,10 @@ Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://do
 
 ## 2 TECHNICAL IMPLEMENTATION
 
-Cross-Platform (Windows, Linux, macOS), Portable Paths, Robust ASCII input parser, High-resolution image exports
-
-The official software version is archived on Zenodo:
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342842.svg)](https://doi.org/10.5281/zenodo.19342842)
-
+*  Cross-Platform (Windows, Linux, macOS)
+*  Portable Paths
+*  Robust ASCII input parser
+*  High-resolution image exports
 
 ## 3 PACKAGE CONTENT
 
