@@ -33,7 +33,7 @@ Cross-Platform (Windows, Linux, macOS), Portable Paths, Robust ASCII input parse
 The official software version is archived on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342842.svg)](https://doi.org/10.5281/zenodo.19342842)
-![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-007ec6?style=flat)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
 
