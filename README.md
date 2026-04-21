@@ -34,6 +34,10 @@ The official software version is archived on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342842.svg)](https://doi.org/10.5281/zenodo.19342842)
 
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange?style=flat)(https://www.python.org/dev/peps/pep-0008/)
+
 ## 3 PACKAGE CONTENT
 
 1. `plot_pt_axes.m` - Plot PT-axes distributions in polar diagram
