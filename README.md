@@ -36,7 +36,7 @@ The official software version is archived on Zenodo:
 
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 
-[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange?style=flat)(https://www.python.org/dev/peps/pep-0008/)
+[![PEP8](https://img.shields.io/badge/code%20style-pep8-orange?style=flat)](https://www.python.org/dev/peps/pep-0008/)
 
 ## 3 PACKAGE CONTENT
 
