@@ -5,7 +5,6 @@ Tools suite for double-couple seismic source analysis: Plot focal mechanism PT-a
 <a href="#cite"><img src="https://img.shields.io/badge/CITE%20AS-%23607D8B?style=flat" alt="Cite As"></a>
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
 
-
 ![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
 
 ---
@@ -34,6 +33,7 @@ Planets and Space, 71:34. [https://doi.org/10.1186/s40623-019-1016-8](https://do
 
 ## 2 TECHNICAL IMPLEMENTATION
 
+*  MATLAB language
 *  Cross-Platform (Windows, Linux, macOS)
 *  Portable Paths
 *  Robust ASCII input parser
