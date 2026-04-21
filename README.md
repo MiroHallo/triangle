@@ -4,7 +4,7 @@ Tools suite for double-couple seismic source analysis: Plot focal mechanism PT-a
 
 <a href="#cite"><img src="https://img.shields.io/badge/CITE%20AS-grey?style=flat" alt="Cite As"></a>
 [![PAPER](https://img.shields.io/badge/PAPER-10.1186%2Fs40623--019--1016--8-%23007EC6?style=flat)](https://doi.org/10.1186/s40623-019-1016-8)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
+[![SOFTWARE](https://img.shields.io/badge/SOFTWARE-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
 
