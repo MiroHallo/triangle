@@ -3,6 +3,9 @@
 Tools suite for double-couple seismic source analysis: Plot focal mechanism PT-axes into polar diagram, triangle diagram, and polar histograms of strike azimuths and dip angles.
 
 ---
+![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
+The software is [citable](#9-cite-as) and archived on Zenodo: [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
+---
 
 This suite provides tools for the analysis and visualization of double-couple seismic 
 sources. It processes Strike, Dip, and Rake angles to generate: 
@@ -33,11 +36,7 @@ Cross-Platform (Windows, Linux, macOS), Portable Paths, Robust ASCII input parse
 The official software version is archived on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342842.svg)](https://doi.org/10.5281/zenodo.19342842)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
 
-![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
-
-[![PEP8](https://img.shields.io/badge/code%20style-pep8-brightgreen?style=flat)](https://www.python.org/dev/peps/pep-0008/)
 
 ## 3 PACKAGE CONTENT
 
