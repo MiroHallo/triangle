@@ -34,7 +34,7 @@ The official software version is archived on Zenodo:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19342842.svg)](https://doi.org/10.5281/zenodo.19342842)
 
-![MATLAB](https://img.shields.io/badge/MATLAB-#ED7D31?style=flat&logo=matlab&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
 
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-brightgreen?style=flat)](https://www.python.org/dev/peps/pep-0008/)
 
