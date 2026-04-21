@@ -2,9 +2,7 @@
 
 Tools suite for double-couple seismic source analysis: Plot focal mechanism PT-axes into polar diagram, triangle diagram, and polar histograms of strike azimuths and dip angles.
 
-The software is [citable](#9-cite-as) and archived on Zenodo.
-
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
+The software is [citable](#9-cite-as) and archived on Zenodo: [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19342842-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19342842)
 
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
